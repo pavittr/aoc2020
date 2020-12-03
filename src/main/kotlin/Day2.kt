@@ -24,7 +24,6 @@ class Password(policyLine: String) {
     }
 
     fun isTobogganValid() : Boolean {
-        password.count{c ->  c == policyCher}
         return (password[lower-1] == policyCher && password[upper-1] != policyCher) || (password[lower-1] != policyCher && password[upper-1] == policyCher)
     }
 }
