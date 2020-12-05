@@ -3,6 +3,8 @@ import java.nio.charset.Charset
 
 class Day1 {
 
+
+
     fun makeItSo() {
         val numArray = File("puzzles/day1").readLines(Charset.defaultCharset()).map { it.toInt() }.sorted()
         val smaller = numArray.filter { it < 1010 }

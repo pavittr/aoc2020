@@ -9,8 +9,6 @@ class Day4 {
             docLine.split(" ", "\n").associate { docElement -> docElement.split(":").let{ (prop, value) -> prop to value } }
         }.filter { it.keys.containsAll(expectedKeys) }.count())
 
-
-
         val realDocs = File("puzzles/day4").readText(Charset.defaultCharset()).split("\n\n").map { docLine ->
             docLine.split(" ", "\n").associate { docElement -> docElement.split(":").let{ (prop, value) -> prop to value } }
         }
