@@ -48,6 +48,9 @@ fun main() {
                     }.map { it.key }.toMutableList()
                 }.toMutableMap()
 
+        fieldGroupedByRowId.forEach{
+            println(it)
+        }
         var listOfFields = mutableMapOf<Int, String>()
 
         while (fieldGroupedByRowId.isNotEmpty()) {
